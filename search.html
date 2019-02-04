@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+		<meta name="description" content="My homepage.">
+		<title>Search Engine</title>
+		<link rel="stylesheet" type="text/css" href="css/mystyle.css"/>
+	</head>
+	<body>
+
+		<header>
+			<img id="logo" src ="images/mylogo2.png" alt="logo"/>
+		</header>
+		
+		<div class="leftS">
+		<h4> Available Phone Networks </h4> 
+		<img class="mobile" src="images/zmobile.png" alt="zmobile" />
+		<p> Z-mobile </p>
+		<img class="mobile" src="images/03.png" alt="03" />
+		<p> O3 </p>
+		<img class="mobile" src="images/fodavone.png" alt="fodafone" />
+		<p> Fodavone </p>
+		<img class="mobile" src="images/NN.png" alt="NN" />
+		<p> NN </p>
+		<a class="button" href='index.html'>Back to Home Page</a>
+		</div>
+		<div class="rightS">
+			<h4><em>Phonetone Search Engine</em></h4>
+			<p>Thank you for joining our site, here you will be able to select the kind of contract phone you're looking for.
+			 We have a wide range to choose from, all the way from Nokia to Apple there will always be a type of phone for <strong>you!</strong> </p>
+			<p> Use the search engine below by entering your preferences to the options available, then click search to view the results in a table generated below! </p>
+			<p> You can also use the reset button to fill out the form again </p>
+			<div id="formTwo">
+		<form name="SearchEngine" onsubmit='return validate(this)' method=post>
+		<div id="dealHeader" >
+		<h3><u>Deal Finder </u></h3>
+		</div>
+	
+		<h4> Mobile costs and contract </h4>
+
+<div id="upfront">
+<label>Upfront cost:</label>
+<p>
+	<label for="£49">£49</label> <input type="radio" name="upfrontCost" id="£49" value="49"/>  
+	<label for="£79">£79</label> <input type="radio" name="upfrontCost" id="£79" value="79"/>  
+	<label for="£0">£0</label> <input type="radio" name="upfrontCost" id="£0" value="0"/> 
+</p>
+</div>
+<div id="Costs">
+
+<label> Monthly cost: </label>
+				<label>Minimum</label>
+<p>
+				<br>
+				<select id="Minimum"  name="Monthly">
+					<option value="0">£0</option>
+					<option value="10">£10</option>
+					<option value="20">£20</option>
+					<option value="30">£30</option>
+					<option value="40">£40</option>
+					<option value="50">£50</option>
+				</select>
+</p>
+
+				<label>Maximum</label>
+<p>
+				<br>
+				<select id="Maximum" name="Monthly">
+					<option value="0">£0</option>
+					<option value="10">£10</option>
+					<option value="20">£20</option>
+					<option value="30">£30</option>
+					<option value="40">£40</option>
+					<option value="50">£50</option>
+				</select>
+</p>
+</div>
+
+<div id="Contract">
+<label>Length of contract:</label>
+<p>
+
+				<label for="18">18 months</label> <input type="radio" name="option" id="18" value="18"/>  
+				<label for="24">24 months</label> <input type="radio" name="option" id="24" value="24"/>
+				 
+						
+</p>
+</div>
+
+<h4><span>Mobile brand and network </span></h4>
+
+<div id="networkBox">
+
+			<p>
+				<label>Networks:</label>
+				
+				<br> 
+
+				<label for="O3">O3</label> <input type="radio" name="network" id="O3" value="O3"/> 
+			    <label for="Z-mobile">Z-mobile</label> <input type="radio" name="network" id="Z-mobile" value="Z-mobile"/> 
+				<label for="NN">NN</label> <input type="radio" name="network" id="NN" value="NN"/>
+				<label for="Fodavone">Fodavone</label> <input type="radio" name="network" id="Fodavone" value="Fodavone"/>					
+			</p>
+			
+</div>
+<div id="brand">
+			<p>
+				<label>Brand:</label>
+				
+				<br>
+				<label for="Apple">Apple</label> <input type="radio" name="brand" id="Apple" value="Apple"/>
+				<label for="Nokia">Nokia</label> <input type="radio" name="brand" id="Nokia" value="Nokia"/> 
+				<label for="LG">LG</label> <input type="radio" name="brand" id="LG" value="LG"/> 
+				<label for="Samsung">Samsung</label> <input type="radio" name="brand" id="Samsung" value="Samsung"/> 
+				<label for="Sony">Sony</label> <input type="radio" name="brand" id="Sony" value="Sony"/> 
+				<label for="Motorola">Motorola</label> <input type="radio" name="brand" id="Motorola" value="Motorola"/> 
+			
+			</p>
+</div>		
+<img id="mobileKid" src="images/Mobilekid.png" alt="phoneKid">	
+<h4>Mobile extras </h4>
+<img id="contractBoard" src="images/contract.png" alt="contractBoard">
+<br>
+<div id="features">
+
+
+				
+<label>Texts:</label>
+<p>
+    <select id="MyFeatures" name="feat">
+        <option value="3500">3500</option>
+        <option value="5000">5000</option>
+        <option value="Unlimited">Unlimited</option>
+    </select>
+</p>
+<div id='value'></div>
+<div class="featPosition">
+<label> Minutes: </label>
+				
+<p>
+				<br>
+				<select id="MinFeatures" name="feat">
+					<option value="100">100</option>
+					<option value="250">250</option>
+					<option value="300">300</option>
+					<option value="500">500</option>
+					<option value="600">600</option>
+					<option value="1000">1000</option>
+					<option value="Unlimited">Unlimited</option>
+				</select>
+</p>
+</div>
+
+<div class="featPosition">
+<label> Data: </label>
+			
+<p>
+				<br>
+				<select id="DataFeatures" name="feat">
+					<option value="250MB">250MB</option>
+					<option value="500MB">500MB</option>
+					<option value="1GB">1GB</option>
+					<option value="2GB">2GB</option>
+					<option value="10GB">10GB</option>
+					<option value="N/A">N/A</option>
+				</select>
+</p>
+</div>
+</div>	
+			<input class = "button" type="Reset" value="Reset" /> 
+			<input class = "button" type="Submit" value="Submit" /> 
+		</form>
+		</div>
+		<h3> Your results: </h3>
+		</div>
+		
+		<div id="tableOne"></div>
+	
+		
+		<br>
+		<footer>
+			<p>Phonetone 45A king street, Enfield, London N12 3BY | Tel: 020 8888 3923</p>
+		</footer>
+		
+	
+		<script src="myjs.js"></script>
+	
+	</body>
+</html>
